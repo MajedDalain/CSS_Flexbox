@@ -1,0 +1,32 @@
+.btn-inline {
+    font-size: inherit;
+    border: none;
+    color: var(--color-blue-dark-1);
+    border-bottom: 1px solid currentColor;
+    margin-left: 1rem;
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--color-yellow-dark-2);
+    }
+
+    &:focus {
+        animation: clicked 1s infinite;
+    }
+
+    @keyframes clicked {
+        0% {
+        }
+
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 0.25rem 0.75rem var(--color-yellow-dark-1);
+        }
+
+        100% {
+            transform: scale(1);
+            box-shadow: none;
+        }
+    }
+}

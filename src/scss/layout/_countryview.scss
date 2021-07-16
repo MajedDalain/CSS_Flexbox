@@ -1,0 +1,97 @@
+.country-view {
+    flex: 1;
+    background-color: var(--color-grey-light-3);
+}
+
+.detail {
+    padding: 4.5rem;
+    display: flex;
+    font-size: var(--font-size-default);
+    color: var(--color-grey-light-5);
+    background-color: var(--color-grey-light-3);
+}
+
+.description {
+    flex: 0 0 60%;
+    padding: 4.5rem;
+    background-color: var(--color-white);
+    margin-right: 4.5rem;
+    border-radius: 1rem;
+
+    &__paragraph:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        border-top: var(--line);
+        border-bottom: var(--line);
+        list-style: none;
+        margin: 2.5rem 0rem;
+        padding: 2.5rem 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        line-height: 2;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        flex: 0 0 50%;
+        text-transform: capitalize;
+    }
+
+    &__list-item::before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+
+        margin-right: 1rem;
+
+        background-image: url(../../imgs/embed.svg);
+        background-size: cover;
+
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: var(--color-blue-dark-1);
+            -webkit-mask-image: url(../../imgs/embed.svg);
+            -webkit-mask-size: cover;
+            mask-image: url(../../imgs/embed.svg);
+            mask-size: cover;
+            background-image: none;
+        }
+    }
+}
+
+.visitor-reviews {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.recommend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        margin-right: auto;
+    }
+
+    &__photos {
+    }
+
+    &__profile-img {
+        box-sizing: content-box;
+        width: 5rem;
+        height: 5rem;
+        border: 0.3rem solid white;
+        border-radius: 50%;
+
+        &:not(:last-child) {
+            margin-right: -2.5rem;
+        }
+    }
+}

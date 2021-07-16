@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="src/scss/main.scss" class="stylesheet" />
+        <title>Companies Ranking</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header__logo-box">
+                    <img
+                        src="imgs/location-logo.png"
+                        alt=""
+                        class="header__logo"
+                    />
+                </div>
+                <div class="search">
+                    <input
+                        type="text"
+                        placeholder="Search Country"
+                        class="search__input"
+                    />
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="imgs/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="imgs/sprite.svg#icon-bookmarks" />
+                        </svg>
+                        <span class="user-nav__notification">5</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="imgs/sprite.svg#icon-bubbles2" />
+                        </svg>
+                        <span class="user-nav__notification">12</span>
+                    </div>
+
+                    <div class="user-nav__profile">
+                        <img
+                            src="imgs/newProfile.min.res.jpeg"
+                            alt=""
+                            class="user-nav__profileImg"
+                        />
+                        <span class="user-nav__profileName">Majed</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <button class="side-nav__link" autofocus>
+                                <span class="side-nav__text">sweden</span>
+                            </button>
+                        </li>
+                        <li class="side-nav__item">
+                            <button class="side-nav__link">
+                                <span class="side-nav__text">France</span>
+                            </button>
+                        </li>
+                        <li class="side-nav__item">
+                            <button class="side-nav__link">
+                                <span class="side-nav__text">Russia</span>
+                            </button>
+                        </li>
+                        <li class="side-nav__item">
+                            <button class="side-nav__link">
+                                <span class="side-nav__text">spain</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="sidebar__footer">
+                        &copy; 2021 by Majed Dalain. Based on CSS Advanced
+                        Course done by Jonas schmedtmann
+                    </div>
+                </nav>
+                <main class="country-view">
+                    <section class="gallery">
+                        <img
+                            src="./imgs/sweden1.jpg"
+                            alt="sweden 1"
+                            class="gallery__photo"
+                        />
+                        <img
+                            src="./imgs/sweden2.jpg"
+                            alt="sweden 2"
+                            class="gallery__photo"
+                        />
+                        <img
+                            src="./imgs/sweden3.png"
+                            alt="sweden 3"
+                            class="gallery__photo"
+                        />
+                    </section>
+                    <section class="overview">
+                        <div class="overview__title">Kingdom of Sweden</div>
+                        <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                <use
+                                    xlink:href="imgs/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use
+                                    xlink:href="imgs/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use
+                                    xlink:href="imgs/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use
+                                    xlink:href="imgs/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use
+                                    xlink:href="imgs/sprite.svg#icon-star-full"
+                                ></use>
+                            </svg>
+                        </div>
+                        <div class="overview__location">
+                            <svg class="overview__location-icon">
+                                <use
+                                    xlink:href="imgs/sprite.svg#icon-location"
+                                ></use>
+                            </svg>
+                            <button class="btn-inline">
+                                Stockholm, Sweden
+                            </button>
+                        </div>
+                        <div class="overview__rating">
+                            <span class="overview__rating-value">9.0</span>
+                            <span class="overview__rating-count"
+                                >1000 votes</span
+                            >
+                        </div>
+                    </section>
+                    <section class="detail">
+                        <section class="description">
+                            <p class="description__paragraph">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ut quod accusantium facere non
+                                quam reprehenderit dolor quidem autem rem
+                                facilis itaque hic magni sunt veniam asperiores
+                                iusto perferendis, mollitia quibusdam. Lorem
+                                ipsum dolor sit amet consectetur adipisicing
+                                elit. Ut quod accusantium facere non quam
+                                reprehenderit dolor quidem autem rem facilis
+                                itaque hic magni sunt veniam asperiores iusto
+                                perferendis, mollitia quibusdam.
+                            </p>
+                            <p class="description__paragraph">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Ab, nostrum? Lorem ipsum dolor
+                                sit, amet consectetur adipisicing elit. Ab,
+                                nostrum?
+                            </p>
+                            <ul class="description__list">
+                                <li class="description__list-item">
+                                    people familiar with English
+                                </li>
+                                <li class="description__list-item">
+                                    best temperature in summer
+                                </li>
+                                <li class="description__list-item">
+                                    snow in the winter
+                                </li>
+                                <li class="description__list-item">
+                                    clean and cheap water
+                                </li>
+                                <li class="description__list-item">
+                                    welcoming people
+                                </li>
+                                <li class="description__list-item">
+                                    very good puplic transporation
+                                </li>
+                                <li class="description__list-item">
+                                    alot of woods
+                                </li>
+                                <li class="description__list-item">
+                                    surronded by lakes and sea
+                                </li>
+                            </ul>
+                            <div class="recommend">
+                                <div class="recommend__text">
+                                    Majed and 3 other friends recommend this
+                                    country
+                                </div>
+                                <div class="recommend__photos">
+                                    <img
+                                        src="imgs/user-3.jpg"
+                                        alt="user 3"
+                                        class="recommend__profile-img"
+                                    />
+                                    <img
+                                        src="imgs/user-4.jpg"
+                                        alt="user 4"
+                                        class="recommend__profile-img"
+                                    />
+                                    <img
+                                        src="imgs/user-5.jpg"
+                                        alt="user 5"
+                                        class="recommend__profile-img"
+                                    />
+                                    <img
+                                        src="imgs/user-6.jpg"
+                                        alt="user 6"
+                                        class="recommend__profile-img"
+                                    />
+                                </div>
+                            </div>
+                        </section>
+                        <section class="visitor-reviews">
+                            <section class="review">
+                                <p class="review__paragraph">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Dicta nemo, dolor
+                                    voluptatibus suscipit architecto ab nisi
+                                    inventore soluta
+                                </p>
+                                <div class="review__user">
+                                    <img
+                                        src="./imgs/user-1.jpg"
+                                        alt="use 1"
+                                        class="review__photo"
+                                    />
+                                    <div class="review__user-box">
+                                        <span class="review__name"
+                                            >Majed Dalain</span
+                                        >
+                                        <span class="review__date"
+                                            >Feb 23rd, 2017
+                                        </span>
+                                    </div>
+                                    <span class="review__rating">8.5</span>
+                                </div>
+                            </section>
+                            <section class="review">
+                                <p class="review__paragraph">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Dicta nemo, dolor
+                                    voluptatibus suscipit architecto ab nisi
+                                    inventore soluta
+                                </p>
+                                <div class="review__user">
+                                    <img
+                                        src="./imgs/user-2.jpg"
+                                        alt="use 2"
+                                        class="review__photo"
+                                    />
+                                    <div class="review__user-box">
+                                        <span class="review__name"
+                                            >Ulrika Uström</span
+                                        >
+                                        <span class="review__date"
+                                            >Mar 23rd, 2019
+                                        </span>
+                                    </div>
+                                    <span class="review__rating">7.9</span>
+                                </div>
+                            </section>
+
+                            <button class="btn-inline">show all &rarr;</button>
+                        </section>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

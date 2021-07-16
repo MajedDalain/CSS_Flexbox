@@ -1,0 +1,10 @@
+.gallery {
+    display: flex;
+    align-items: center;
+
+    &__photo {
+        width: 33.333%;
+        height: 22rem;
+        display: block;
+    }
+}
