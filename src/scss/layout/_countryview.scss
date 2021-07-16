@@ -1,4 +1,6 @@
 .country-view {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     background-color: var(--color-grey-light-3);
 }
@@ -93,5 +95,73 @@
         &:not(:last-child) {
             margin-right: -2.5rem;
         }
+    }
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    padding: 4rem;
+
+    &__heading {
+        margin: 1rem;
+        line-height: 3;
+        text-transform: uppercase;
+        color: var(--color-yellow-dark-1);
+        letter-spacing: 0.2rem;
+    }
+
+    &__btn {
+        border: none;
+        background-image: linear-gradient(
+            to right,
+            var(--color-blue-light-1),
+            var(--color-blue-dark-1)
+        );
+        border-radius: 10rem;
+        position: relative;
+
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-yellow-dark-2);
+        overflow: hidden;
+
+        &:hover {
+            background-image: linear-gradient(
+                to right,
+                var(--color-blue-dark-1),
+                var(--color-blue-light-1)
+            );
+            cursor: pointer;
+        }
+
+        & > * {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s;
+        }
+    }
+
+    &__btn-visible {
+        padding: 2rem 6rem;
+    }
+    &__btn-invisible {
+        position: absolute;
+        left: 0rem;
+        top: -100%;
+        padding: 2rem 0rem;
+    }
+
+    &__btn:hover &__btn-invisible {
+        transform: translateY(5.8rem);
+    }
+
+    &__btn:hover &__btn-visible {
+        transform: translateY(5rem);
     }
 }
