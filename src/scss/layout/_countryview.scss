@@ -11,6 +11,10 @@
     font-size: var(--font-size-default);
     color: var(--color-grey-light-5);
     background-color: var(--color-grey-light-3);
+
+    @media only screen and(max-width: $bp-large) {
+        padding: 2rem;
+    }
 }
 
 .description {
@@ -19,6 +23,11 @@
     background-color: var(--color-white);
     margin-right: 4.5rem;
     border-radius: 1rem;
+
+    @media only screen and(max-width: $bp-large) {
+        padding: 3rem;
+        margin-right: 2.5rem;
+    }
 
     &__paragraph:not(:last-of-type) {
         margin-bottom: 2rem;
@@ -83,6 +92,7 @@
     }
 
     &__photos {
+        display: flex;
     }
 
     &__profile-img {
@@ -104,14 +114,14 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-white);
-    padding: 4rem;
+    padding: 3rem;
 
     &__heading {
         margin: 1rem;
         line-height: 3;
         text-transform: uppercase;
         color: var(--color-yellow-dark-1);
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.125rem;
     }
 
     &__btn {

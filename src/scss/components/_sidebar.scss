@@ -8,7 +8,15 @@
     align-items: flex-start;
     padding: 5rem 0rem;
 
+    @media screen and(max-width:$bp-medium) {
+        flex-direction: row;
+        padding: 0rem;
+    }
+
     &__footer {
+        @media screen and(max-width:$bp-medium) {
+            display: none;
+        }
         padding: 0rem 2rem;
     }
 }
@@ -17,8 +25,17 @@
     width: 100%;
     list-style: none;
 
+    @media screen and(max-width:$bp-medium) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     &__item {
         position: relative;
+        @media screen and(max-width:$bp-medium) {
+            flex: 1;
+        }
     }
 
     &__link,
@@ -36,6 +53,10 @@
         padding: 1.5rem 0rem;
         text-align: center;
         text-transform: uppercase;
+
+        @media screen and(max-width:$bp-medium) {
+            margin: 0rem;
+        }
 
         &:hover {
             cursor: pointer;
