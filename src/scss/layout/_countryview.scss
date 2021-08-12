@@ -15,6 +15,12 @@
     @media only screen and(max-width: $bp-large) {
         padding: 2rem;
     }
+
+    @media only screen and(max-width: $bp-small) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .description {
@@ -27,6 +33,11 @@
     @media only screen and(max-width: $bp-large) {
         padding: 3rem;
         margin-right: 2.5rem;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+        margin-right: 0rem;
+        margin-bottom: 2rem;
     }
 
     &__paragraph:not(:last-of-type) {
