@@ -115,10 +115,11 @@
     justify-content: center;
     background-color: var(--color-white);
     padding: 3rem;
+    text-align: center;
 
     &__heading {
         margin: 1rem;
-        line-height: 3;
+        line-height: 1.5;
         text-transform: uppercase;
         color: var(--color-yellow-dark-1);
         letter-spacing: 0.125rem;
